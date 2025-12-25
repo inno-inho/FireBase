@@ -1,0 +1,40 @@
+<Front>
+[확장프로그램 설치]
+css.lint.unknownAtRules
+
+[프로젝트 파일 설치]
+- react vite TypeScript 설치
+npm create vite@latest . (React, TypeScript + SWC)
+npm install
+
+- tailwindcss 설치
+npm install -D tailwindcss@3 postcss autoprefixer
+npx tailwindcss init -p
+
+- 프론트엔드 실행시키기
+npm run dev
+
+
+
+
+<백엔드>
+- firebase 설치
+npm install firebase
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAiFcNyHRqBIWqTLVzC4ii69MJjGUuMFyE",
+  authDomain: "my-todo-firebase-b341f.firebaseapp.com",
+  projectId: "my-todo-firebase-b341f",
+  storageBucket: "my-todo-firebase-b341f.firebasestorage.app",
+  messagingSenderId: "160635258736",
+  appId: "1:160635258736:web:3064872ceb10694f24b1b5"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
